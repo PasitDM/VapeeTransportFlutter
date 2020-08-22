@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vapee Transport',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'THSarabunNew',
+        primarySwatch: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
