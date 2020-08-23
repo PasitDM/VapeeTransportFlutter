@@ -1,4 +1,9 @@
-import 'package:app_vapee_transport/screens/home.dart';
+import 'package:app_vapee_transport/screens/book_ticket_page.dart';
+import 'package:app_vapee_transport/screens/car_gps_page.dart';
+import 'package:app_vapee_transport/screens/contactus_page.dart';
+import 'package:app_vapee_transport/screens/home_page.dart';
+import 'package:app_vapee_transport/screens/login_page.dart';
+import 'package:app_vapee_transport/screens/trackparcel_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +20,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      // home: HomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/login': (context) => LoginPage(),
+        '/bookTicket': (context) => BookTicketPage(),
+        '/carGps': (context) => CarGpsPage(),
+        '/trackParcel': (context) => TrackParcelPage(),
+        '/contact': (context) => ContactUsPage(),
+      },
       debugShowCheckedModeBanner: false,
     );
   }
