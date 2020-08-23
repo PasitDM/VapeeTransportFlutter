@@ -39,18 +39,9 @@ class ContactUsPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'ชื่อบริษัท : วาปีเดินรถ จำกัด',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                          Text(
-                            'ประเภท : บริษัทจำกัด',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ],
+                      Text(
+                        'ชื่อบริษัท : วาปีเดินรถ จำกัด\nประเภท : บริษัทจำกัด',
+                        style: TextStyle(fontSize: 20),
                       ),
                       Image.asset(
                         'assets/images/electric-bus.png',
@@ -59,19 +50,7 @@ class ContactUsPage extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'ประเภทธุรกิจ : รับ – ส่งผุ้โดยสารประจำทาง',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  Text(
-                    'ชื่อบริษัท : วาปีเดินรถ จำกัด',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  Text(
-                    'ที่อยู่ : 58 ถ.พิทักษ์นรากร ต.หนองแสง อ.วาปีปทุม จ.มหาสารคาม 44120',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  Text(
-                    'เบอร์โทรศัพท์ : 043-799-253',
+                    'ประเภทธุรกิจ : รับ – ส่งผุ้โดยสารประจำทาง\nชื่อบริษัท : วาปีเดินรถ จำกัด\nที่อยู่ : 58 ถ.พิทักษ์นรากร ต.หนองแสง อ.วาปีปทุม จ.มหาสารคาม 44120\nเบอร์โทรศัพท์ : 043-799-253',
                     style: TextStyle(fontSize: 20),
                   ),
                 ],

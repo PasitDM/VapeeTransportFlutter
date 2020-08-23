@@ -13,24 +13,29 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Vapee Transport',
-      theme: ThemeData(
-        fontFamily: 'THSarabunNew',
-        primarySwatch: Colors.yellow,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      // home: HomePage(),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => HomePage(),
-        '/login': (context) => LoginPage(),
-        '/bookTicket': (context) => BookTicketPage(),
-        '/carGps': (context) => CarGpsPage(),
-        '/trackParcel': (context) => TrackParcelPage(),
-        '/contact': (context) => ContactUsPage(),
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).requestFocus(FocusNode());
       },
-      debugShowCheckedModeBanner: false,
+      child: MaterialApp(
+        title: 'Vapee Transport',
+        theme: ThemeData(
+          fontFamily: 'THSarabunNew',
+          primarySwatch: Colors.yellow,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        // home: HomePage(),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => HomePage(),
+          '/login': (context) => LoginPage(),
+          '/bookTicket': (context) => BookTicketPage(),
+          '/carGps': (context) => CarGpsPage(),
+          '/trackParcel': (context) => TrackParcelPage(),
+          '/contact': (context) => ContactUsPage(),
+        },
+        debugShowCheckedModeBanner: false,
+      ),
     );
   }
 }
