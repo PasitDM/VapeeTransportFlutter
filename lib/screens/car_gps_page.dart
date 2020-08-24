@@ -64,7 +64,6 @@ class _CarGpsPageState extends State<CarGpsPage> {
             ),
             RaisedButton(
               onPressed: () {
-                print('ติดตามรถโดยสาร');
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SecondGpsPage()),
@@ -73,10 +72,14 @@ class _CarGpsPageState extends State<CarGpsPage> {
               padding: EdgeInsets.symmetric(horizontal: 25, vertical: 6),
               color: clrBtn,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Text(
                 'ติดตามรถโดยสาร',
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
               ),
             ),
           ],

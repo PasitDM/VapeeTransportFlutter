@@ -1,3 +1,4 @@
+import 'package:app_vapee_transport/screens/vapee_layout.dart';
 import 'package:flutter/material.dart';
 
 import '../constraint.dart';
@@ -12,8 +13,7 @@ class _TrackParcelPageState extends State<TrackParcelPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: clrBackground,
+    return VapeeLayout(
       appBar: AppBar(
         backgroundColor: clrBackground,
         elevation: 0,
@@ -83,16 +83,21 @@ class _TrackParcelPageState extends State<TrackParcelPage> {
                 ),
               ),
               RaisedButton(
-                onPressed: () {
-                  print('ติดตามพัสดุ');
-                },
-                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 6),
+                onPressed: () {},
+                padding: EdgeInsets.symmetric(
+                  horizontal: 25,
+                  vertical: 6,
+                ),
                 color: clrBtn,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: Text(
                   'ติดตามพัสดุ',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ],
