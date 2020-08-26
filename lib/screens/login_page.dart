@@ -50,12 +50,15 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     hintText: 'Username',
                     hintStyle: TextStyle(fontSize: 22),
+                    labelText: 'Username',
+                    labelStyle: TextStyle(color: Colors.black87),
                   ),
                 ),
               ), // TextField Username
               Container(
                 margin: EdgeInsets.all(8),
                 child: TextFormField(
+                  obscureText: true,
                   style: TextStyle(fontSize: 22.0),
                   decoration: InputDecoration(
                     filled: true,
@@ -76,19 +79,25 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     hintText: 'Password',
                     hintStyle: TextStyle(fontSize: 22),
+                    labelText: 'Password',
+                    labelStyle: TextStyle(color: Colors.black87),
                   ),
                 ),
               ), // TextField Password
               SizedBox(height: 25),
               RaisedButton(
                 onPressed: () {},
-                padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 60, vertical: 8),
                 color: clrBtn,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
                 child: Text(
                   'เข้าสู่ระบบ',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               FlatButton(
@@ -98,22 +107,24 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
-              FlatButton(
-                onPressed: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Don’t have an account? ',
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                    Text(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Don’t have an account? ',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/register');
+                    },
+                    child: Text(
                       'Sign Up',
                       style: TextStyle(color: clrBtn, fontSize: 20),
                     ),
-                  ],
-                ),
-              ),
+                  ),
+                ],
+              ), // Go to Register Page
             ],
           ),
         ),

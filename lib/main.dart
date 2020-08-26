@@ -3,6 +3,7 @@ import 'package:app_vapee_transport/screens/car_gps_page.dart';
 import 'package:app_vapee_transport/screens/contact_us_page.dart';
 import 'package:app_vapee_transport/screens/home_page.dart';
 import 'package:app_vapee_transport/screens/login_page.dart';
+import 'package:app_vapee_transport/screens/register_page.dart';
 import 'package:app_vapee_transport/screens/track_parcel_page.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/carGps': (context) => CarGpsPage(),
         '/trackParcel': (context) => TrackParcelPage(),
         '/contact': (context) => ContactUsPage(),
+        '/register': (context) => RegisterPage(),
       },
       debugShowCheckedModeBanner: false,
     );
