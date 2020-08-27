@@ -1,5 +1,5 @@
 import 'package:app_vapee_transport/constraint.dart';
-import 'package:app_vapee_transport/screens/third_book_ticket_page.dart';
+import 'package:app_vapee_transport/screens/book_ticket_third_page.dart';
 import 'package:flutter/material.dart';
 
 class SecondBookTicketPage extends StatefulWidget {
@@ -123,63 +123,68 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.all(12),
-              padding: EdgeInsets.all(12),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(12)),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'ป. 2 รถปรับอากาศ 32 ที่นั่ง',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                        ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ThirdBookTicketPage()),
+                );
+              },
+              child: Container(
+                margin: EdgeInsets.all(12),
+                padding: EdgeInsets.all(12),
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'ป. 2 รถปรับอากาศ 32 ที่นั่ง',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 8),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.pink)),
-                            child: Text(
-                              'เวลารถออก\n04.00 น.',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 24,
-                              ),
-                              textAlign: TextAlign.center,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 8),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.pink)),
+                          child: Text(
+                            'เวลารถออก\n04.00 น.',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 24,
                             ),
-                          ), // Source
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 8),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.indigo)),
-                            child: Text(
-                              'ถึงปลายทาง\n05.45 น.',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 24,
-                              ),
-                              textAlign: TextAlign.center,
+                            textAlign: TextAlign.center,
+                          ),
+                        ), // Source
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 8),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.indigo)),
+                          child: Text(
+                            'ถึงปลายทาง\n05.45 น.',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 24,
                             ),
-                          ), // Destination
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
+                            textAlign: TextAlign.center,
+                          ),
+                        ), // Destination
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ), // รถปรับอากาศ
+            ), // รถปรับอากาศ เดาว่าต้องทำเป็น list ว่ามีกี่คัน
             SizedBox(height: 30),
             RaisedButton(
               onPressed: () {

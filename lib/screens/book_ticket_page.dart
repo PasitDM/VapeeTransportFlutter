@@ -1,4 +1,4 @@
-import 'package:app_vapee_transport/screens/second_book_ticket_page.dart';
+import 'package:app_vapee_transport/screens/book_ticket_second_page.dart';
 
 import '../constraint.dart';
 import 'package:flutter/material.dart';
