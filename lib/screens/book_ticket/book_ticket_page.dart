@@ -55,7 +55,9 @@ class _BookTicketPageState extends State<BookTicketPage> {
               margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
               decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(10)),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: DropdownButton(
                 isExpanded: true,
                 hint: Text(
@@ -144,7 +146,8 @@ class _BookTicketPageState extends State<BookTicketPage> {
                 Container(
                   width: MediaQuery.of(context).size.width * 0.5,
                   height: 50,
-                  margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+                  margin:
+                      EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
                   padding:
                       EdgeInsets.only(left: 12, right: 12, top: 3, bottom: 3),
                   decoration: BoxDecoration(
@@ -218,13 +221,14 @@ class _BookTicketPageState extends State<BookTicketPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondBookTicketPage()),
+                  MaterialPageRoute(
+                      builder: (context) => SecondBookTicketPage()),
                 );
               },
               padding: EdgeInsets.symmetric(horizontal: 60, vertical: 5),
               color: clrBtn,
-              shape:
-                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
               child: Text(
                 'ตกลง',
                 style: TextStyle(
