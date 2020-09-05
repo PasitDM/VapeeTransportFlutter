@@ -13,7 +13,7 @@ class _BookTicketPageState extends State<BookTicketPage> {
   List<String> _destination = <String>['a', 'b', 'c'];
   // List<int> _numSeats = [1, 2];
   String _valueSource = 'เลือกต้นทาง';
-  String _valueDesc = 'เลือกปลายทาง';
+  String _valueDestination = 'เลือกปลายทาง';
   int _valueNumSeats = 1;
 
   DateTime selectedDate = DateTime.now();
@@ -89,7 +89,7 @@ class _BookTicketPageState extends State<BookTicketPage> {
               child: DropdownButton(
                 isExpanded: true,
                 hint: Text(
-                  '$_valueDesc',
+                  '$_valueDestination',
                   style: TextStyle(
                     fontSize: 24,
                     color: Colors.black,
@@ -100,11 +100,11 @@ class _BookTicketPageState extends State<BookTicketPage> {
                   Icons.arrow_drop_down,
                   color: Colors.black,
                 ),
-                value: _valueDesc,
+                value: _valueDestination,
                 items: [],
                 onChanged: (value) {
                   setState(() {
-                    _valueDesc = value;
+                    _valueDestination = value;
                   });
                 },
               ),
@@ -222,7 +222,13 @@ class _BookTicketPageState extends State<BookTicketPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => SecondBookTicketPage()),
+                    builder: (context) => SecondBookTicketPage(
+                      source: _valueSource,
+                      destination: _valueDestination,
+                      dateDepature: '${selectedDate.toLocal()}"'.split(' ')[0],
+                      numSeat: _valueNumSeats,
+                    ),
+                  ),
                 );
               },
               padding: EdgeInsets.symmetric(horizontal: 60, vertical: 5),

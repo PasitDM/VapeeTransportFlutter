@@ -3,6 +3,17 @@ import 'package:app_vapee_transport/screens/book_ticket/book_ticket_third_page.d
 import 'package:flutter/material.dart';
 
 class SecondBookTicketPage extends StatefulWidget {
+  final String source, destination;
+  final dateDepature;
+  final int numSeat;
+
+  SecondBookTicketPage({
+    this.source,
+    this.destination,
+    this.dateDepature,
+    this.numSeat,
+  });
+
   @override
   _SecondBookTicketPageState createState() => _SecondBookTicketPageState();
 }
@@ -54,7 +65,7 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                             ),
                           ),
                           Text(
-                            'สุรินทร์',
+                            '${widget.source}',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 24,
@@ -82,7 +93,7 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                             ),
                           ),
                           Text(
-                            'บุรีรัมย์',
+                            '${widget.destination}',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 24,
@@ -110,7 +121,7 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                             ),
                           ),
                           Text(
-                            'วันอาทิตย์ 23 ส.ค. 2563 ',
+                            '${widget.dateDepature}',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 24,
@@ -152,8 +163,8 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 8),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 30, vertical: 8),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.pink)),
                           child: Text(
@@ -166,8 +177,8 @@ class _SecondBookTicketPageState extends State<SecondBookTicketPage> {
                           ),
                         ), // Source
                         Container(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 8),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 30, vertical: 8),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.indigo)),
                           child: Text(
