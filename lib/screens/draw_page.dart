@@ -2,7 +2,7 @@ import 'package:app_vapee_transport/screens/payment/payment_page.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-import '../constraint.dart';
+import '../utils/constraint.dart';
 
 class DrawPage extends StatefulWidget {
   @override

@@ -2,7 +2,7 @@ import 'package:app_vapee_transport/screens/gps/car_gps_second_page.dart';
 import 'package:app_vapee_transport/screens/vapee_layout.dart';
 import 'package:flutter/material.dart';
 
-import '../../constraint.dart';
+import '../../utils/constraint.dart';
 
 class CarGpsPage extends StatefulWidget {
   @override

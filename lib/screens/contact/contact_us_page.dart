@@ -1,4 +1,4 @@
-import '../../constraint.dart';
+import '../../utils/constraint.dart';
 import 'package:flutter/material.dart';
 
 class ContactUsPage extends StatelessWidget {

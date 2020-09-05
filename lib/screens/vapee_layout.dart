@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constraint.dart';
+import '../utils/constraint.dart';
 
 class VapeeLayout extends StatelessWidget {
   final AppBar appBar;
