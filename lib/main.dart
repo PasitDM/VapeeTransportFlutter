@@ -1,10 +1,11 @@
-import 'package:app_vapee_transport/screens/book_ticket_page.dart';
-import 'package:app_vapee_transport/screens/car_gps_page.dart';
-import 'package:app_vapee_transport/screens/contact_us_page.dart';
-import 'package:app_vapee_transport/screens/home_page.dart';
-import 'package:app_vapee_transport/screens/login_page.dart';
-import 'package:app_vapee_transport/screens/register_page.dart';
-import 'package:app_vapee_transport/screens/track_parcel_page.dart';
+import 'package:app_vapee_transport/constraint.dart';
+import 'package:app_vapee_transport/screens/book_ticket/book_ticket_page.dart';
+import 'package:app_vapee_transport/screens/gps/car_gps_page.dart';
+import 'package:app_vapee_transport/screens/contact/contact_us_page.dart';
+import 'package:app_vapee_transport/screens/home/home_page.dart';
+import 'package:app_vapee_transport/screens/login/login_page.dart';
+import 'package:app_vapee_transport/screens/register/register_page.dart';
+import 'package:app_vapee_transport/screens/track_parcel/track_parcel_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'THSarabunNew',
         primarySwatch: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        canvasColor: clrBackground,
       ),
       initialRoute: '/',
       routes: {

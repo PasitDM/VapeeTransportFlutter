@@ -1,7 +1,7 @@
 import 'package:app_vapee_transport/screens/vapee_layout.dart';
 import 'package:flutter/material.dart';
 
-import '../constraint.dart';
+import '../../constraint.dart';
 
 class TrackParcelPage extends StatefulWidget {
   @override

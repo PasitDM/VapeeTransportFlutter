@@ -1,5 +1,5 @@
 import 'package:app_vapee_transport/constraint.dart';
-import 'package:app_vapee_transport/screens/payment_second_page.dart';
+import 'package:app_vapee_transport/screens/payment/payment_second_page.dart';
 import 'package:flutter/material.dart';
 
 class PaymentPage extends StatefulWidget {

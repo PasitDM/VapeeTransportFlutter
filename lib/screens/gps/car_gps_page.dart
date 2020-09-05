@@ -1,7 +1,8 @@
-import 'package:app_vapee_transport/screens/second_gps_page.dart';
+import 'package:app_vapee_transport/screens/gps/car_gps_second_page.dart';
+import 'package:app_vapee_transport/screens/vapee_layout.dart';
 import 'package:flutter/material.dart';
 
-import '../constraint.dart';
+import '../../constraint.dart';
 
 class CarGpsPage extends StatefulWidget {
   @override
@@ -13,8 +14,7 @@ class _CarGpsPageState extends State<CarGpsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: clrBackground,
+    return VapeeLayout(
       appBar: AppBar(
         backgroundColor: clrBackground,
         elevation: 0,
@@ -66,7 +66,7 @@ class _CarGpsPageState extends State<CarGpsPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondGpsPage()),
+                  MaterialPageRoute(builder: (context) => CarGpsSecondPage()),
                 );
               },
               padding: EdgeInsets.symmetric(horizontal: 25, vertical: 6),

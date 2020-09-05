@@ -1,5 +1,5 @@
 import 'package:app_vapee_transport/constraint.dart';
-import 'package:app_vapee_transport/screens/payment_page.dart';
+import 'package:app_vapee_transport/screens/payment/payment_page.dart';
 import 'package:flutter/material.dart';
 
 class FourthBookTicketPage extends StatefulWidget {
